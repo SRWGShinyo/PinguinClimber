@@ -9,4 +9,9 @@ public class RetryButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void Home()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

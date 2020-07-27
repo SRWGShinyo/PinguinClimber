@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/WebWinLinMacMain.unity
+    guid: 62c525879dd9aab449fdf3c82772db7e
+  - enabled: 1
+    path: Assets/Scenes/WebWinLinMac.unity
+    guid: 9be21e2cbea3f4b4db10c41a4b884abd
   m_configObjects: {}
