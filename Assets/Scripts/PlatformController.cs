@@ -153,21 +153,8 @@ public class PlatformController : MonoBehaviour
         foreach (GameObject b in buttonsMaj)
             buttons.Add(b);
 
-        int chosen1 = Random.Range(0, buttons.Count);
-        GameObject chosen = buttons[chosen1];
-        buttons.RemoveAt(chosen1);
 
-        int chosen2 = Random.Range(0, buttons.Count);
-        GameObject chosenb2 = buttons[chosen2];
-        buttons.RemoveAt(chosen2);
-
-        Vector3 keep = chosenb2.transform.position;
-        chosenb2.transform.position = chosen.transform.position;
-        chosen.transform.position = keep;
-
-        Vector3 keep2 = buttons[0].transform.position;
-        buttons[0].transform.position = buttons[1].transform.position;
-        buttons[1].transform.position = keep2;
+        FindObjectOfType<ButtonShuffler>().ShuffleButtons(buttons);
     }
 
     private void HandlePlatforming()
